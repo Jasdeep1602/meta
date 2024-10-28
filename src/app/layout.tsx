@@ -3,6 +3,8 @@ import localFont from 'next/font/local';
 import './globals.css';
 import TopNavigation from '@/components/topNavigation';
 import BottomInfo from '@/components/bottomInfo';
+import '@rainbow-me/rainbowkit/styles.css';
+import { Providers } from '@/components/Providers';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -37,11 +39,13 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${neueMon.variable} ${dx.variable} antialiased`}>
-        <TopNavigation />
-        {children}
-        <footer>
-          <BottomInfo />
-        </footer>
+        <Providers>
+          <TopNavigation />
+          {children}
+          <footer>
+            <BottomInfo />
+          </footer>
+        </Providers>
       </body>
     </html>
   );
