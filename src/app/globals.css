@@ -349,3 +349,12 @@ body {
   margin-top: 2px;
   font-family: var(--font-neue-mon), sans-serif;
 }
+
+.bar {
+  position: relative;
+  width: 150px;
+  height: 7px;
+  border: 1.5px solid rgb(76, 76, 76);
+  border-radius: 10px;
+  background: #282828;
+}

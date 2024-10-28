@@ -5,6 +5,7 @@ import TopNavigation from '@/components/topNavigation';
 import BottomInfo from '@/components/bottomInfo';
 import '@rainbow-me/rainbowkit/styles.css';
 import { Providers } from '@/components/Providers';
+import ReduxProvider from '@/redux/reduxProvider';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -40,11 +41,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${neueMon.variable} ${dx.variable} antialiased`}>
         <Providers>
-          <TopNavigation />
-          {children}
-          <footer>
-            <BottomInfo />
-          </footer>
+          <ReduxProvider>
+            {' '}
+            <TopNavigation />
+            {children}
+            <footer>
+              <BottomInfo />
+            </footer>
+          </ReduxProvider>
         </Providers>
       </body>
     </html>
