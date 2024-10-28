@@ -1,5 +1,7 @@
 'use client';
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Provider } from 'react-redux';
 
 import reduxStore from './store';

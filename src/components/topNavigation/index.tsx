@@ -23,7 +23,7 @@ export default function TopNavigation() {
   return (
     <div className='navcontainer'>
       <div className='leftnav'>
-        <Image width={73} height={27} alt='vault' src={vaultImage} />
+        <Image width={73} height={24} alt='vault' src={vaultImage} />
         <div className='side-buttons'>
           <LogoTextButton icon={homeImage} text='Home' onClick={handleHome} />
           <LogoTextButton icon={dashImage} text='Admin' />

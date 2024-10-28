@@ -78,7 +78,7 @@ body {
 }
 
 .button-nav-text {
-  font-size: 15px;
+  font-size: 13px;
   color: #cdcdcd;
   font-weight: 400;
   font-family: var(--font-neue-mon), sans-serif;
@@ -228,7 +228,7 @@ body {
   font-family: var(--font-neue-mon), sans-serif;
 
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   border: 1px solid white;
   padding: 7.5px;
   border-radius: 4px;
@@ -268,10 +268,11 @@ body {
 }
 
 .toggle {
+  font-size: 13px;
   font-family: var(--font-dx-mon), sans-serif;
   position: absolute;
   display: flex;
-  padding: 8px;
+  padding: 3px;
   width: 65%;
   border-top: 1px solid white;
   border-right: 1px solid white;
@@ -288,8 +289,8 @@ body {
 
 .depo {
   padding-left: 25px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 25px;
   border-top: 1px solid white;
   border-right: 1px solid white;
@@ -301,18 +302,15 @@ body {
 
 .slip {
   position: absolute;
+  font-size: 13px;
   background: #204af8e5;
   top: -25px;
-
   right: 8px;
   font-family: var(--font-dx-mon), sans-serif;
   display: flex;
   gap: 2px;
   border-radius: 12px;
-  padding-left: 16px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-right: 16px;
+  padding: 6px;
   border-top: 1px solid white;
   border-right: 1px solid white;
   border-left: 1px solid white;
@@ -324,22 +322,30 @@ body {
   margin-left: 22px;
   padding: 12px;
   height: 30%;
-  width: 90%;
+  width: 94%;
+  border-radius: 6px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 4px solid white;
+  font-family: var(--font-dx-mon), sans-serif;
+}
+.boxdi {
+  margin-top: 20px;
+  margin-left: 22px;
+  font-family: var(--font-dx-mon), sans-serif;
+
+  padding: 12px;
+  height: 30%;
+  width: 94%;
   border-radius: 6px;
   border-top: 1px solid white;
   border-right: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 4px solid white;
 }
-.boxdi {
-  margin-top: 20px;
-  margin-left: 22px;
-  padding: 12px;
-  height: 30%;
-  width: 90%;
-  border-radius: 6px;
-  border-top: 1px solid white;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
-  border-bottom: 4px solid white;
+
+.fontchange {
+  margin-top: 2px;
+  font-family: var(--font-neue-mon), sans-serif;
 }

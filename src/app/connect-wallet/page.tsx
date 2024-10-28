@@ -10,6 +10,9 @@ export default function page() {
   const tvlIcon = '/icon-2.png';
   const hourIcon = '/icon-3.png';
   const settingIcon = '/setting.png';
+  const dogeIcon = '/doge.png';
+  const arrowIcon = '/arrow-down.png';
+  const yellow = '/yellow.png';
 
   return (
     <div className=' h-[80vh] flex justify-center gap-24 relative'>
@@ -76,12 +79,65 @@ export default function page() {
           <div>
             <Image width={24} height={24} alt='icon' src={settingIcon} />
           </div>
-          Slippage
+          Slippage: 0.05%
         </div>
         <div className='flex-col w-[100vw] items-center justify-center'>
           {' '}
-          <div className='boxdif' />
-          <div className='boxdi' />
+          <div className='boxdif'>
+            <div className='flex justify-between mb-2'>
+              <div className=' text-[12px]'>Deposit</div>{' '}
+              <div className=' text-[12px]'>Asset Balance: 0.000 DOGE</div>
+            </div>
+            <div className='flex justify-between mb-6'>
+              <div className='text-[20px]'>0.00</div>
+              <div className='text-[12px] flex gap-4 items-center justify-center bg-[#204af8e5]  p-1 rounded-md border-white border-2  '>
+                <Image
+                  className='mb-1'
+                  width={15}
+                  height={15}
+                  alt='doge'
+                  src={dogeIcon}
+                />
+                DOGE{' '}
+                <Image width={10} height={10} alt='arrow' src={arrowIcon} />
+              </div>
+            </div>
+            <div className='flex justify-between'>
+              <div className=' text-[12px]'>$0</div>
+              <div></div>
+            </div>
+          </div>
+          <div className='boxdi'>
+            <div className='flex justify-between mb-2'>
+              <div className=' text-[12px]'>Withdraw</div>{' '}
+              <div className=' text-[12px]'>ms Doge Balance: 0.000 DOGE</div>
+            </div>
+            <div className='flex justify-between mb-6'>
+              <div className='text-[20px]'>0.00</div>
+              <div className='text-[12px] flex gap-4 items-center justify-center bg-[#204af8e5]  p-1 rounded-md border-white border-2  '>
+                <Image
+                  className='mb-1'
+                  width={15}
+                  height={15}
+                  alt='doge'
+                  src={dogeIcon}
+                />
+                ms DOGE{' '}
+              </div>
+            </div>
+            <div>
+              <Image src={yellow} width={150} height={50} alt='yellow' />
+            </div>
+          </div>
+          <div className='flex justify-between fontchange text-[12px] mx-6'>
+            <div className='flex justify-center items-center '>
+              <div>
+                <Image width={15} height={15} alt='ic' src={infoIcon} />
+              </div>{' '}
+              Vault entry fees
+            </div>
+            <div>0.80%</div>
+          </div>
           <div className=' mt-5 flex items-center justify-center w-full '>
             <ConnectButton />
           </div>
